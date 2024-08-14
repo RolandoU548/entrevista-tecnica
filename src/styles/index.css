@@ -1,12 +1,91 @@
+.container {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
-/* 
+.title {
+  font-weight: 700;
+  font-size: 38px;
+  width: 30%;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 70%;
+  min-width: 600px;
+}
 
-*/
+.card-container {
+  width: calc(50% - 24px);
+  min-width: 300px;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-color: #dadada;
+  border-style: solid;
+  padding: 24px 8px 12px 8px;
+  border-radius: 9px;
+  position: relative;
+}
+
+.card-title {
+  font-weight: 700;
+  line-height: 21px;
+  font-size: 18px;
+}
+
+.card-paragraph {
+  font-size: 14px;
+  line-height: 16px;
+  height: 80px;
+}
+
+.card-info {
+  background-color: #f2f6fa;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 12px;
+}
+
+.card-button {
+  display: block;
+  background-color: #0097cf;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 7px 16px 7px 16px;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  width: 100%;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.main-icon {
+  width: 28px;
+  height: 24px;
+  background-color: #0097cf;
+}
+
+.icon-container {
+  width: 54px;
+  height: 54px;
+  background-color: #0097cf;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -30px;
+}
